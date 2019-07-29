@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <form [formGroup]="form">
+
+    <ion-item>
+      <ion-label position="stacked">Agent</ion-label>
+      <ion-select formControlName="agent">
+        <ion-select-option *ngFor="let data of agents" [value]="data.code">{{data.desc}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+</form>
+
+
+</ion-content>
